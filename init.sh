@@ -103,3 +103,7 @@ echo svn用户名：hecao
 echo svn密码：tSsuuTNv9p
 svn checkout svn://116.62.198.65/repos/blackcat/branches/gedou_net_dev2/net
 
+#-------------------数据迁移用的--------------------------------------
+ip=$(curl ifconfig.me)
+echo 服务器迁移需要将迁移目标接口改为以下接口
+echo http://$ip/recv_data/
