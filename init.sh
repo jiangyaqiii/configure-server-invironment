@@ -45,8 +45,7 @@ name=MongoDB Repository
 baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.4/x86_64/
 gpgcheck=1
 enabled=1
-gpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc'
-> /etc/yum.repos.d/mongodb-org-4.4.repo
+gpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc' > /etc/yum.repos.d/mongodb-org-4.4.repo
 #安装 MongoDB
 sudo yum install -y mongodb-org
 # 启动 MongoDB 服务
