@@ -106,3 +106,8 @@ svn checkout svn://116.62.198.65/repos/blackcat/branches/gedou_net_dev2/net
 ip=$(curl ifconfig.me)
 echo 服务器迁移需要将迁移目标接口改为以下接口
 echo http://$ip/recv_data/
+
+#-------------------开放80端口--------------------------------------
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+firewall-cmd --reload
+firewall-cmd --list-ports
