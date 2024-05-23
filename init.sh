@@ -93,7 +93,9 @@ pip3 install pymongo==3.6.0
 pip3 install redis==4.3.1
 pip3 install msgpack
 pip3 install zmail
-pip3 install  aiohttp
+pip3 install aiohttp
+pip3 install tornado
+
 # 下载svn
 sudo yum install subversion
 mkdir xinrun
