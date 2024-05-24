@@ -112,5 +112,8 @@ echo http://$ip/recv_data/
 
 #-------------------开放80端口--------------------------------------
 firewall-cmd --zone=public --add-port=80/tcp --permanent
+sudo firewall-cmd --zone=public --add-port=81/tcp --permanent
+# 验证端口是否开放成功
+# sudo firewall-cmd --zone=public --list-ports
 firewall-cmd --reload
 firewall-cmd --list-ports
