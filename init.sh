@@ -67,6 +67,7 @@ pip3 install zmail
 pip3 install aiohttp
 pip3 install tornado
 pip3 install apscheduler
+pip3 install paramiko
 
 # 下载svn
 sudo yum install subversion
