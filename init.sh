@@ -7,6 +7,7 @@
 #-------------------安装公共库--------------------------------------
 sudo yum install sshpass
 sudo yum install firewalld
+sudo yum install subversion
 
 #-------------------安装mongo--------------------------------------
 #导入 MongoDB 的 GPG 公钥
@@ -70,8 +71,9 @@ pip3 install tornado
 pip3 install apscheduler
 pip3 install paramiko
 
+#-------------------拉去svn代码--------------------------------------
 # 下载svn
-sudo yum install subversion
+cd ~
 mkdir xinrun
 cd xinrun
 # svn拉取代码
