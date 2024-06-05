@@ -6,6 +6,7 @@
 # cd mongo
 #-------------------安装公共库--------------------------------------
 sudo yum install sshpass
+sudo yum install firewalld
 
 #-------------------安装mongo--------------------------------------
 #导入 MongoDB 的 GPG 公钥
@@ -84,9 +85,10 @@ echo 服务器迁移需要将迁移目标接口改为以下接口
 echo http://$ip/recv_data/
 
 #-------------------开放80端口--------------------------------------
+sudo systemctl start firewalld
+sudo systemctl enable firewalld
 firewall-cmd --zone=public --add-port=80/tcp --permanent
 sudo firewall-cmd --zone=public --add-port=81/tcp --permanent
-# 验证端口是否开放成功
-# sudo firewall-cmd --zone=public --list-ports
+sudo firewall-cmd --permanent --add-port=22/tcp
 firewall-cmd --reload
 firewall-cmd --list-ports
