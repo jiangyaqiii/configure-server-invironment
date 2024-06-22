@@ -70,6 +70,7 @@ pip3 install aiohttp
 pip3 install tornado
 pip3 install apscheduler
 pip3 install paramiko
+pip3 install unipayment
 
 #-------------------拉去svn代码--------------------------------------
 # 下载svn
